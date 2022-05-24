@@ -122,7 +122,7 @@ namespace ConsoleApp1
             }*/
 
             //int n = 8;
-            for (int i = 1; i <= 8; i++)
+            /*for (int i = 1; i <= 8; i++)
             {
                 for (int j = 1; j <= 8; j++)
                     if (i == 1 || i == 8 || j == 1)
@@ -137,7 +137,26 @@ namespace ConsoleApp1
 
 
                 Console.WriteLine();
-            }
+            }*/
+
+            string input= "";
+            Console.Write("Enter a string : ");
+            input = Console.ReadLine();
+
+            char[] temp = input.ToCharArray();
+            Array.Reverse(temp);
+            string output = new string(temp);
+            
+               
+                if (input.Equals(output))
+                {
+                    Console.WriteLine("String is Palindrome");
+                }
+                else
+                {
+                    Console.WriteLine("String is not Palindrome Input");
+                }
+            Console.ReadLine();
 
 
 
