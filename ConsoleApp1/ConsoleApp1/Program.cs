@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -139,7 +140,7 @@ namespace ConsoleApp1
                 Console.WriteLine();
             }*/
 
-            string input= "";
+            /*string input= "";
             Console.Write("Enter a string : ");
             input = Console.ReadLine();
 
@@ -156,7 +157,83 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("String is not Palindrome Input");
                 }
-            Console.ReadLine();
+            Console.ReadLine();*/
+
+
+
+            /* int max1, max2;
+             int[] arr = { 20, 50, 45, 63, 23, 2 };
+             Console.WriteLine("Array elements are:");
+
+             for (int i = 0; i < arr.Length; i++)
+             {
+                 Console.WriteLine(arr[i] + "");
+
+             }
+             max1 = max2 = arr[0];
+             for (int i = 0; i < arr.Length; i++)
+             {
+
+                 if (arr[i] > max1)
+                 {
+                     max2 = max1;
+                     max1 = arr[i];
+                 }
+                 else if (arr[i] > max2)
+                 {
+                     max2 = arr[i];
+                 }
+              }
+            // Console.WriteLine("first Max number   " + max1);
+               Console.WriteLine("Second  Max number   " + max2);
+               Console.ReadLine();*/
+
+            /* int[] arr = { 1, 2, 3, 2, 4, 5, 2, 4 };
+
+            if (arr.Length != arr.Distinct().Count())
+            {
+                Console.WriteLine("Array contains duplicates");
+            }
+            else
+            {
+                Console.WriteLine("Array does not contains duplicates");
+            }*/
+
+            int[,] arr1 = new int[2, 2];
+            int[,] arr2 = new int[2, 2];
+            //int[,] arr3 = new int[2, 2];
+
+            //Input from arr1
+            for (int row = 0; row < 2; row++)
+            {
+                for (int col = 0; col < 2; col++)
+                {
+                    Console.WriteLine("Please enter the value for arr1[" + row + "," + col + "]: ");
+                    arr1[row, col] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            //Input from arr2
+            for (int row = 0; row < 2; row++)
+            {
+                for (int col = 0; col < 2; col++)
+                {
+                    Console.WriteLine("Please enter the value for arr2[" + row + "," + col + "]: ");
+                    arr2[row, col] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+
+            //Output
+            for (int row = 0; row < 2; row++)
+            {
+                for (int col = 0; col < 2; col++)
+                {
+                    Console.Write((arr1[row, col] * arr2[row, col]) + "\t");
+                }
+                Console.WriteLine();
+
+
+            }
 
 
 
@@ -182,14 +259,16 @@ namespace ConsoleApp1
 
 
 
-        }
+
+
+            }
 
 
 
 
-            // Console.WriteLine("Hello World!");
+        // Console.WriteLine("Hello World!");
 
 
-        }
+    }
     }
 
