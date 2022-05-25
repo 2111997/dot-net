@@ -199,7 +199,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Array does not contains duplicates");
             }*/
 
-            int[,] arr1 = new int[2, 2];
+            /*int[,] arr1 = new int[2, 2];
             int[,] arr2 = new int[2, 2];
             //int[,] arr3 = new int[2, 2];
 
@@ -213,26 +213,77 @@ namespace ConsoleApp1
                 }
             }
             //Input from arr2
+            //for (int row = 0; row < 2; row++)
+            //{
+            //    for (int col = 0; col < 2; col++)
+            //    {
+            //        Console.WriteLine("Please enter the value for arr2[" + row + "," + col + "]: ");
+            //        arr2[row, col] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
+
+            Console.WriteLine("Matrix before Transpose");
+            //Matrix before Transpose
             for (int row = 0; row < 2; row++)
             {
                 for (int col = 0; col < 2; col++)
                 {
-                    Console.WriteLine("Please enter the value for arr2[" + row + "," + col + "]: ");
-                    arr2[row, col] = Convert.ToInt32(Console.ReadLine());
+                    //Console.Write((arr1[row, col]+arr2[row,col])+"\t");
+                    Console.Write(arr1[row, col] + "\t");
                 }
+                Console.WriteLine();
             }
 
-
+            //process for transpose
+            for (int row = 0; row < 2; row++)
+            {
+                for (int col = 0; col < 2; col++)
+                {
+                    arr2[col, row] = arr1[row, col];
+                }
+            }
+            Console.WriteLine("Matrix After Transpose");
             //Output
             for (int row = 0; row < 2; row++)
             {
                 for (int col = 0; col < 2; col++)
                 {
-                    Console.Write((arr1[row, col] * arr2[row, col]) + "\t");
+                    //Console.Write((arr1[row, col]+arr2[row,col])+"\t");
+                    Console.Write(arr2[row, col] + "\t");
                 }
                 Console.WriteLine();
 
+            }*/
+            int[] ar = new int[5] { 1, 2, 2, 3, 3 };
+            int counter = 0;
+            for (int i = 0; i < ar.Length; i++)
+            {
+                counter = 0;
 
+                for (int j = 0; j < i - 1; j++)
+                {
+                    if (ar[i] == ar[j])                      //Increment the counter when the search value is duplicate
+
+                    {
+                        counter++;
+                    }
+                }
+
+                for (int k = i + 1; k < ar.Length; k++)
+                {
+                    if (ar[i] == ar[k])
+                    {
+                        counter++;
+                    }
+                    if (ar[i] == ar[i + 1])
+                    {
+                        i++;
+                    }
+                }
+                if (counter == 0)
+                {
+                    Console.WriteLine(ar[i]);
+                }
             }
 
 
@@ -261,7 +312,7 @@ namespace ConsoleApp1
 
 
 
-            }
+        }
 
 
 
