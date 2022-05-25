@@ -254,37 +254,65 @@ namespace ConsoleApp1
                 Console.WriteLine();
 
             }*/
-            int[] ar = new int[5] { 1, 2, 2, 3, 3 };
-            int counter = 0;
-            for (int i = 0; i < ar.Length; i++)
+
+
+            /* int[] ar = new int[5] { 1, 2, 2, 3, 3 };
+             int counter = 0;
+             for (int i = 0; i < ar.Length; i++)
+             {
+                 counter = 0;
+
+                 for (int j = 0; j < i - 1; j++)
+                 {
+                     if (ar[i] == ar[j])                      //Increment the counter when the search value is duplicate
+
+                     {
+                         counter++;
+                     }
+                 }
+
+                 for (int k = i + 1; k < ar.Length; k++)
+                 {
+                     if (ar[i] == ar[k])
+                     {
+                         counter++;
+                     }
+                     if (ar[i] == ar[i + 1])
+                     {
+                         i++;
+                     }
+                 }
+                 if (counter == 0)
+                 {
+                     Console.WriteLine(ar[i]);
+                 }
+             }*/
+
+
+            int[][] jagged_array = new int[][]
+                {
+                   
+                    new int[] { 1,2,2},
+                    new int[] { 1,2,4,8,7},
+                    new int[] { 1,2,5,9,8},
+                    new int[] { 1,2,15,7,9},
+                    new int[] { 1,2,5,6,3},
+                 
+                };
+
+            for (int i = 0; i < jagged_array.Length; i++)
             {
-                counter = 0;
-
-                for (int j = 0; j < i - 1; j++)
+                for (int j = 0; j < jagged_array[i].Length; j++)
                 {
-                    if (ar[i] == ar[j])                      //Increment the counter when the search value is duplicate
-
-                    {
-                        counter++;
-                    }
+                    Console.Write(jagged_array[i][j]);
                 }
-
-                for (int k = i + 1; k < ar.Length; k++)
-                {
-                    if (ar[i] == ar[k])
-                    {
-                        counter++;
-                    }
-                    if (ar[i] == ar[i + 1])
-                    {
-                        i++;
-                    }
-                }
-                if (counter == 0)
-                {
-                    Console.WriteLine(ar[i]);
-                }
+                Console.WriteLine();
             }
+
+
+
+
+
 
 
 
