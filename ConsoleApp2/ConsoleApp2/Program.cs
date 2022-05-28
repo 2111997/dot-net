@@ -21,12 +21,9 @@ namespace ConsoleApp2
             b = c;
 
             Console.WriteLine("In Swap Method \na=" + a + "  b=" + b);
-
-
-
-
-
         }
+
+
 
 
 
