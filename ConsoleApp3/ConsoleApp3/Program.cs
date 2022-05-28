@@ -5,14 +5,30 @@ namespace ConsoleApp3
 
     class employee
     {
-        public string Name;
-        public int ID;
-        public string Gender;
-        public int Salary;
+        private string Name;
+        private int ID;
+        private string Gender;
+        private int Salary;
 
-    
 
-      public void GetData()
+
+
+
+        public employee()
+        {
+            Name = "Sneha ";
+        }
+
+        //~ <class-name>()
+        //get Input from User
+        ~employee()
+        {
+
+        }
+
+
+
+        public void GetData()
         {
         Console.WriteLine("employee Details are:");
 
@@ -22,7 +38,7 @@ namespace ConsoleApp3
          Console.WriteLine("Enter Employee ID:");
           ID = Convert.ToInt32(Console.ReadLine());
 
-         Console.WriteLine("Enter Employee Name:");
+         Console.WriteLine("Enter Employee Gender:");
          Gender = Console.ReadLine();
 
         Console.WriteLine("Enter Employee Salary:");
