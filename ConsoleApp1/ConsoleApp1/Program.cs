@@ -289,7 +289,7 @@ namespace ConsoleApp1
              }*/
 
 
-            int[][] jagged_array = new int[][]
+            /*int[][] jagged_array = new int[][]
                 {
                    
                     new int[] { 1,2,2},
@@ -307,47 +307,32 @@ namespace ConsoleApp1
                     Console.Write(jagged_array[i][j]);
                 }
                 Console.WriteLine();
+            }*/
+
+
+            factorial();
+
+        }
+            static void factorial()
+            {
+                int i, fact = 1, number;
+                Console.Write("Enter any Number: ");
+                number = int.Parse(Console.ReadLine());
+                for (i = 1; i <= number; i++)
+                {
+                    fact = fact * i;
+                }
+                Console.Write("Factorial of " + number + " is: " + fact);
+
+
+
+
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            // Console.WriteLine("Hello World!");
         }
 
-
-
-
-        // Console.WriteLine("Hello World!");
-
-
-    }
-    }
+        }
+    
 
