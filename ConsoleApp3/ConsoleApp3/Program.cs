@@ -66,14 +66,14 @@ namespace ConsoleApp3
 
 
        
-        static void Main(string[] args)
+        static void Main12(string[] args)
 
         {
             //employee a = new employee();
             //a.Name = "Sneha";
             //a.ID = 123;
             //a.Gender = "F";
-            //a.Salary = 200000;
+            //a.Salary = 200000
 
 
 
