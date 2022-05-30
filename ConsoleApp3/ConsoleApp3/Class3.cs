@@ -49,7 +49,7 @@ namespace ConsoleApp3
 
      class PhotoBookTest
     {
-        public static void Main() 
+        public static void Main3() 
         {
 
             PhotoBook p = new PhotoBook();
