@@ -35,7 +35,7 @@ namespace ConsoleApp3
         }
 
 
-        public static void Main()
+        public static void Main4()
         {
             sum();
             sum(1, 2, 3);
