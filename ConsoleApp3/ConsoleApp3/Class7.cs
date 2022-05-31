@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp3
 {
-    public abstract class Animal
+     abstract class Animal
     {
         private string Name;
 
@@ -20,7 +20,7 @@ namespace ConsoleApp3
         public abstract void eat();
 
     }
-         public class Dog : Animal
+         class Dog : Animal
         {
              public override void eat()
              {
@@ -30,7 +30,7 @@ namespace ConsoleApp3
         }
     class Class7
     {
-        public static void Main()
+        public static void Main7()
         
         {
             Dog d = new Dog();
