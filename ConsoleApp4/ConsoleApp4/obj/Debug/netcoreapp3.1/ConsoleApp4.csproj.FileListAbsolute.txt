@@ -1,0 +1,14 @@
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.exe
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.deps.json
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.json
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.runtimeconfig.dev.json
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\bin\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.AssemblyReference.cache
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfoInputs.cache
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.AssemblyInfo.cs
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.dll
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.pdb
+C:\Users\Sneha\Desktop\Dot-net\ConsoleApp4\ConsoleApp4\obj\Debug\netcoreapp3.1\ConsoleApp4.genruntimeconfig.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sneha\\Desktop\\New folder\\Dot-net\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {}
+    "C:\\Users\\Sneha\\Desktop\\Dot-net\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sneha\\Desktop\\New folder\\Dot-net\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
+    "C:\\Users\\Sneha\\Desktop\\Dot-net\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sneha\\Desktop\\New folder\\Dot-net\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-        "projectName": "ConsoleApp3",
-        "projectPath": "C:\\Users\\Sneha\\Desktop\\New folder\\Dot-net\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectUniqueName": "C:\\Users\\Sneha\\Desktop\\Dot-net\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+        "projectName": "ConsoleApp4",
+        "projectPath": "C:\\Users\\Sneha\\Desktop\\Dot-net\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
         "packagesPath": "C:\\Users\\Sneha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sneha\\Desktop\\New folder\\Dot-net\\ConsoleApp3\\ConsoleApp3\\obj\\",
+        "outputPath": "C:\\Users\\Sneha\\Desktop\\Dot-net\\ConsoleApp4\\ConsoleApp4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sneha\\AppData\\Roaming\\NuGet\\NuGet.Config",
