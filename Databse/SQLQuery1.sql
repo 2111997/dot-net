@@ -33,3 +33,8 @@ select * from employee emp LEFT OUTER JOIN department dep on emp.departmentid=de
 select * from employee emp RIGHT OUTER JOIN department dep on emp.departmentid=dep.id;
 
 select * from employee as emp inner join department as dep on emp.departmentid=dep.id;
+
+
+
+
+
