@@ -67,7 +67,7 @@ namespace ConsoleApp4
 
  class Program
     {
-        static void Main1(string[] args)
+        public static void Main12(string[] args)
         {
             Bicycle b = new Bicycle();
             b.changegear(2);
