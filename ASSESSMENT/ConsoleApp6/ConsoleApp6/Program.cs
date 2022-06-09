@@ -7,9 +7,18 @@ namespace ConsoleApp6
 {
     class Program
     {
+       public static void ListData(SampleDBContext db)
+        {
+            var data = db.Samples;
+            foreach (var item in data)
+            {
+                Console.WriteLine(item.id + " | " + item.Fname);
+            }
+        }
         static void Main(string[] args)
         {
-
+            SampleDBContext db = new SampleDBContext();
+            bool Exit = false;
             while (true) 
             {
                 Console.WriteLine("Enter the choice");
@@ -20,9 +29,8 @@ namespace ConsoleApp6
                 Console.WriteLine("5.Exit");
 
 
-                int ch = Convert.ToInt32(Console.ReadLine());
-                SampleDBContext db = new SampleDBContext();
-                switch (ch)
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
                 {
                     case 1:
                         Console.WriteLine("Enter your name");
@@ -31,17 +39,13 @@ namespace ConsoleApp6
                         ss.Fname = name;
                         db.Samples.Add(ss);
                         db.SaveChanges();
+                        Console.WriteLine("Record added succefully");
                         break;
                     case 2:
-                        var data = db.Samples;
-
-                        Console.WriteLine("record----");
-                        foreach (var item in data)
-                        {
-                            Console.WriteLine(item.Fname + " | " + item.id);
-                        }
+                        ListData(db);
                         break;
                     case 3:
+                        ListData(db);
                         Console.WriteLine("Pleae enter id of your name which you want to update");
                         int InsertItem = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Please enter the new name");
@@ -52,6 +56,7 @@ namespace ConsoleApp6
                         db.SaveChanges();
                         break;
                     case 4:
+                        ListData(db);
                         Console.WriteLine("Pleae enter id of your name which you want to delete");
                         int DeleteItem = Convert.ToInt32(Console.ReadLine());
                         var DeleteObject = db.Samples.Where(x => x.id == DeleteItem).FirstOrDefault();
@@ -59,6 +64,7 @@ namespace ConsoleApp6
                         db.SaveChanges();
                         break;
                     case 5:
+                        Console.WriteLine("Thank you");
                         Environment.Exit(0);
                         break;
                     default:
@@ -66,7 +72,9 @@ namespace ConsoleApp6
                         break;
 
                 }
-           }
+                if (Exit)
+                    break;
+            }
 
            
 
