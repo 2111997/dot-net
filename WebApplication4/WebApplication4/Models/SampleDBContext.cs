@@ -21,6 +21,7 @@ namespace WebApplication4.Models
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Sample> Samples { get; set; }
         public virtual DbSet<StudentDatum> StudentData { get; set; }
+        public object StudentDatums { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

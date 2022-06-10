@@ -9,7 +9,7 @@ namespace WebApplication4.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int? RollNo { get; set; }
-        public int? Courseid { get; set; }
+        public int RollNo { get; set; }
+        public int Courseid { get; set; }
     }
 }
