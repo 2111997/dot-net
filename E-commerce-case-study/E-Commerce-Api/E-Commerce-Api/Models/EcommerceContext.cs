@@ -36,13 +36,11 @@ namespace E_Commerce_Api.Models
 
             modelBuilder.Entity<AdminDetail>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.AdminId);
 
                 entity.Property(e => e.Address)
                     .HasMaxLength(100)
                     .IsUnicode(false);
-
-                entity.Property(e => e.AdminId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.AdminLastName)
                     .HasMaxLength(100)
@@ -59,13 +57,11 @@ namespace E_Commerce_Api.Models
 
             modelBuilder.Entity<ProductDetail>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.ProductId);
 
                 entity.Property(e => e.ProductCode)
                     .HasMaxLength(100)
                     .IsUnicode(false);
-
-                entity.Property(e => e.ProductId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.ProductName)
                     .HasMaxLength(100)
@@ -74,7 +70,7 @@ namespace E_Commerce_Api.Models
 
             modelBuilder.Entity<UserDetail>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.UserId);
 
                 entity.Property(e => e.Address)
                     .HasMaxLength(100)
@@ -83,8 +79,6 @@ namespace E_Commerce_Api.Models
                 entity.Property(e => e.Gender)
                     .HasMaxLength(100)
                     .IsUnicode(false);
-
-                entity.Property(e => e.UserId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.UserLastName)
                     .HasMaxLength(100)
